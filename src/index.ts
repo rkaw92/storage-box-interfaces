@@ -6,3 +6,4 @@ export * from './FilesystemsOperations';
 export * from './FilesystemStructureOperations';
 export * from './FilesystemDataUpload';
 export * from './FilesystemDataDownload';
+export * from './FilesystemPermissionManagement';
