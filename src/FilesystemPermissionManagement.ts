@@ -8,6 +8,13 @@ export interface SetEntryPermissionParams {
     comment?: string | null;
 };
 
+export interface RevokePermissionAdministrativelyParams {
+    entryID: EntryID;
+    criterion: AttributeBasedCriterion;
+    revocationCriterion: AttributeBasedCriterion;
+};
+
 export interface FilesystemPermissionManagement {
     setEntryPermission(params: SetEntryPermissionParams): Promise<void>;
+    revokePermissionAdministratively(params: RevokePermissionAdministrativelyParams): Promise<void>;
 };
