@@ -5,6 +5,7 @@ export interface SetEntryPermissionParams {
     entryID: EntryID;
     permission: EntryPermissions;
     criterion: AttributeBasedCriterion;
+    comment?: string | null;
 };
 
 export interface FilesystemPermissionManagement {
